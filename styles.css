@@ -17,6 +17,7 @@ header {
     color: #fff;
     padding: 1em 0;
     text-align: center;
+    margin-top: -80px;
 }
 
 nav {
@@ -53,4 +54,5 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+    margin-left: -100px;
 }
