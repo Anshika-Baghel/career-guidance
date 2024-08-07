@@ -6,33 +6,24 @@
     <title>Resource Hub</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="css/indexpage.css">
-
 </head>
 <body>
     <header>
         <h1>Welcome to Our Career Guidance Hub</h1>
         <nav>
-            <button onclick="loadContent('career.html', 'career')">Career Exploration</button>
-            <button onclick="loadContent('education.html', 'education')">Educational Resources</button>
-            <button onclick="loadContent('mentorship.html', 'mentorship')">Mentorship Programs</button>
+            <button onclick="loadContent('career.html', 'content')">Career Exploration</button>
+            <button onclick="loadContent('education.html', 'content')">Educational Resources</button>
+            <button onclick="loadContent('mentorship.html', 'content')">Mentorship Programs</button>
         </nav>
+        
     </header>
-
     <main>
-        <section id="career" class="content">
-            <!-- Add links or content related to career exploration -->
+        <div id="content">
+            <!-- Content will be loaded here -->
             <img src="images/career_exploration.jpg" alt="Image 1" class="image-item">
             <img src="images/educational_resources.jpg" alt="Image 2" class="image-item">
             <img src="images/mentorship_program.jpg" alt="Image 3" class="image-item">
-        </section>
-
-        <section id="education" class="content">
-            <!-- Add links or content related to educational resources -->
-        </section>
-
-        <section id="mentorship" class="content">
-            <!-- Add links or content related to mentorship programs -->
-        </section>
+        </div>
     </main>
 
     <footer>
