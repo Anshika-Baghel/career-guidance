@@ -65,13 +65,3 @@ main {
 .button:hover {
     background: #0056b3;
 }
-
-footer {
-    text-align: center;
-    padding: 1em 0;
-    background: #333;
-    color: #fff;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}

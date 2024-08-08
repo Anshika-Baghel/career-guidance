@@ -9,30 +9,12 @@ function loadContent(pageUrl, contentId) {
     };
     xhr.send();
 }
+document.addEventListener("DOMContentLoaded", () => {
 
+    // Load footer
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('footer').innerHTML = data);
+});
 
-// function showSection(sectionId) {
-//     // Hide all sections
-//     const sections = document.querySelectorAll('.content');
-//     sections.forEach(section => {
-//         section.style.display = 'none';
-//     });
-
-//     // Show the selected section
-//     const sectionToShow = document.getElementById(sectionId);
-//     if (sectionToShow) {
-//         sectionToShow.style.display = 'block';
-//     }
-// }
-
-// Optionally, show a default section on page load
-// document.addEventListener('DOMContentLoaded', () => {
-//     showSection('index'); // Change this to the default section you want visible
-// });
-// document.addEventListener('DOMContentLoaded', () => {
-//     showSection('education'); // Change this to the default section you want visible
-// });
-// document.addEventListener('DOMContentLoaded', () => {
-//     showSection('mentorship'); // Change this to the default section you want visible
-// });
 
